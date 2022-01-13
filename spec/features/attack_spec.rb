@@ -7,6 +7,7 @@ feature 'attack' do
   scenario 'Reduced Player 2s HP by 10' do
     sign_in_and_play
     click_button('Attack')
+    click_button('Return')
     expect(page).to have_content("Jason (90%)")
   end
 end
