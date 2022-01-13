@@ -26,6 +26,7 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
+    ### Next step. Refactor the game logic to the Game.class
     @hit_player = [$game.player_1, $game.player_2].sample
     if @hit_player == $game.player_1
       @unhit_player = $game.player_2
