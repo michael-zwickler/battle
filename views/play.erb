@@ -8,11 +8,11 @@
 
 <body>
 
-<%= $player_1.name %> (100%)
+<%= "#{$player_1.name} (#{$player_1.hp}%)" %>
 <br><br>
 vs  
 <br><br>
-<%= $player_2.name %> (100%)
+<%= "#{$player_2.name} (#{$player_2.hp}%)" %>
 <br><br><br><br>
 <form action="/attack">
   <button type="submit"> Attack </button>
