@@ -5,8 +5,6 @@ feature 'Adding player names' do
     fill_in('player_2', with: 'Michael')
     click_button('start')
 
-    # save_and_open_page
-
     expect(page).to have_content('Orla')
     expect(page).to have_content('Michael')
   end
