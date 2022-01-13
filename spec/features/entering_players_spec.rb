@@ -1,11 +1,7 @@
 feature 'Adding player names' do
   scenario 'add two players and submit' do
-    visit '/'
-    fill_in('player_1', with: 'Orla')
-    fill_in('player_2', with: 'Michael')
-    click_button('start')
-
-    expect(page).to have_content('Orla')
-    expect(page).to have_content('Michael')
+    sign_in_and_play
+    expect(page).to have_content('Freddy')
+    expect(page).to have_content('Jason')
   end
 end
